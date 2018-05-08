@@ -18,7 +18,7 @@ headers = {
 }
 
 
-# 获取ip和端口
+# 从西刺代理那里获取ip和端口
 def gain_ip_port():
     response = sess.get('http://www.xicidaili.com/wt/', headers=headers)
     response.encoding = response.apparent_encoding
@@ -35,7 +35,7 @@ def gain_ip_port():
     return ip_list
 
 
-# 测试ip是否可用
+# 访问百度来测试ip是否可用
 def checkout_valid(ip):
     try:
         html = sess.get('http://www.baidu.com', proxies={'http': ip}, headers=headers)
