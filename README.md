@@ -1,4 +1,4 @@
 # Anti-Anti-Spider
 
-> - ip_proxy.py ip代理池
-> - headers_random_choice.py 头信息
+> - ip_proxy.py: ip proxy pool
+> - headers_random_choice.py: header information
